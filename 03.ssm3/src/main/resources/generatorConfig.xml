@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<context id="context1" >
+	<!-- 数据库驱动、URL、用户名、密码 -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/mybatis-test?characterEncoding=utf8" userId="root" password="123456" />
+    <!-- 生成模型的包和位置 -->
+    <javaModelGenerator targetPackage="com.hanfeng.ssm3.model" targetProject="ssm3" />
+   	<!-- 生成映射文件的包名和位置 -->
+    <sqlMapGenerator targetPackage="com.hanfeng.ssm3.mapping" targetProject="ssm3" />
+    <!-- 生成dao的包名和位置 -->
+    <javaClientGenerator targetPackage="com.hanfeng.ssm3.dao" targetProject="ssm3" type="XMLMAPPER" />
+    <!-- 指定要生成的表 -->
+    <table schema="" tableName="user" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+  </context>
+</generatorConfiguration>
